@@ -2,12 +2,61 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>/</loc>
-		<lastmod>2024-02-04T11:40:53+00:00</lastmod>
+		<lastmod>2025-04-18T11:47:56+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2021/04/iPhone1-1.png</image:loc>
+			<image:loc>/wp-content/uploads/2022/02/hero-image.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>/wp-content/uploads/2021/04/First-Media-Surabaya-350x55.png</image:loc>
+			<image:loc>/wp-content/uploads/elementor/thumbs/woman-is-holding-festive-bouquet-with-chrysathemum-flowers-her-hands-scaled-qksysvpcxk7hktmke1fqpta7z8ekmaq0q5od9pn8q2.webp</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/elementor/thumbs/bundo-kim-OZhdQm_OjX4-unsplash-qksz07u0a09278ywjplwogmqwi8pp8ulegzt4grm5m.webp</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/elementor/thumbs/image2-qksyifpwztwsksspdiwz0g5ud3vr3d9dygq52zry0w.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2022/02/instafeed-image.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>/cart/</loc>
+		<lastmod>2024-02-06T14:05:44+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/checkout/</loc>
+		<lastmod>2024-02-06T14:05:44+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/my-account/</loc>
+		<lastmod>2024-02-06T14:05:44+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/florist/</loc>
+		<lastmod>2024-02-09T07:06:04+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/privacy-policy/</loc>
+		<lastmod>2024-02-14T12:40:20+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/contact/</loc>
+		<lastmod>2025-04-18T11:46:28+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/about/</loc>
+		<lastmod>2025-04-18T11:47:11+00:00</lastmod>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/03/about-image.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/elementor/thumbs/image2-qksyifpwztwsksspdiwz0g5ud3vr3d9dygq52zry0w.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/elementor/thumbs/woman-is-holding-festive-bouquet-with-chrysathemum-flowers-her-hands-scaled-qksysvpcxk7hktmke1fqpta7z8ekmaq0q5od9pn8q2.webp</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2022/02/instafeed-image.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>
