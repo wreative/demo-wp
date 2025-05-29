@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: https://konstraktorsurabaya.com/?sitemap.xml
+Sitemap: https://konstraktorsurabaya.com/sitemap.xml
+Sitemap: https://konstraktorsurabaya.com/lowpr.php?sitemap.xml
