@@ -1,0 +1,490 @@
+/* Rate Convert Widget Styles */
+.rate-convert-box {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.rate-convert-box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.rate-convert-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Icon position: left (default) */
+.icon-position-left .rate-convert-inner {
+    flex-direction: row;
+}
+
+.icon-position-left .rate-convert-icon {
+    margin-right: 20px;
+}
+
+/* Icon position: top */
+.icon-position-top .rate-convert-inner {
+    flex-direction: column;
+    text-align: center;
+}
+
+.icon-position-top .rate-convert-icon {
+    margin-bottom: 15px;
+}
+
+/* Icon position: right */
+.icon-position-right .rate-convert-inner {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.icon-position-right .rate-convert-icon {
+    margin-left: 20px;
+}
+
+.rate-convert-icon img {
+    max-width: 70px;
+    height: auto;
+    display: block;
+}
+
+.rate-convert-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #333333;
+}
+
+.rate-convert-info {
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 5px;
+}
+
+.rate-convert-value {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.rate-convert-box-empty {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px dashed #dddddd;
+    border-radius: 8px;
+    text-align: center;
+    color: #888888;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .icon-position-left .rate-convert-inner,
+    .icon-position-right .rate-convert-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .icon-position-left .rate-convert-icon,
+    .icon-position-right .rate-convert-icon {
+        margin: 0 0 15px 0;
+    }
+}
+
+/* Rate Convert Frontend Styles */
+.whatsapp-form-widget {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.whatsapp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #1f1f1f;
+    font-size: 16px;
+}
+
+/* Common Form Styles */
+.whatsapp-form-widget select,
+.rate-convert-box select {
+    width: 100%;
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #1f1f1f;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23718096'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+    padding-right: 48px;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.whatsapp-form-widget select:hover,
+.rate-convert-box select:hover {
+    border-color: #CBD5E0;
+}
+
+.whatsapp-form-widget select:focus,
+.rate-convert-box select:focus {
+    border-color: #805AD5;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(128, 90, 213, 0.1);
+}
+
+.whatsapp-form-widget select::-ms-expand,
+.rate-convert-box select::-ms-expand {
+    display: none;
+}
+
+.whatsapp-form-widget select option,
+.rate-convert-box select option {
+    padding: 16px;
+    font-size: 16px;
+    color: #1f1f1f;
+    background-color: #fff;
+}
+
+/* Disabled State */
+.whatsapp-form-widget select:disabled,
+.rate-convert-box select:disabled {
+    background-color: #F7FAFC;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Input Styles */
+.whatsapp-form input:not([type="radio"]),
+.rate-convert-box input:not([type="radio"]) {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #1f1f1f;
+    transition: all 0.2s ease;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.whatsapp-form input:not([type="radio"]):focus,
+.rate-convert-box input:not([type="radio"]):focus {
+    border-color: #805AD5;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(128, 90, 213, 0.1);
+}
+
+.whatsapp-form input::placeholder,
+.rate-convert-box input::placeholder {
+    color: #A0AEC0;
+}
+
+/* Validation States */
+.whatsapp-form input.is-invalid,
+.whatsapp-form select.is-invalid,
+.rate-convert-box input.is-invalid,
+.rate-convert-box select.is-invalid {
+    border-color: #E53E3E;
+}
+
+.whatsapp-form input.is-valid,
+.whatsapp-form select.is-valid,
+.rate-convert-box input.is-valid,
+.rate-convert-box select.is-valid {
+    border-color: #38A169;
+}
+
+.price-range {
+    display: block;
+    margin-top: 4px;
+    font-size: 14px;
+    color: #718096;
+}
+
+.price-range.error {
+    color: #E53E3E;
+}
+
+.submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background-color: #805AD5;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #6B46C1;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(128, 90, 213, 0.2);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.submit-button i {
+    font-size: 20px;
+}
+
+/* Loading State */
+.submit-button.loading {
+    background-color: #6B46C1;
+    pointer-events: none;
+}
+
+.submit-button.loading::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffffff;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: button-loading 0.8s linear infinite;
+}
+
+@keyframes button-loading {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Modal Styles */
+.whatsapp-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-modal.show {
+    display: flex;
+}
+
+.whatsapp-modal-content {
+    background: white;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: modalShow 0.3s ease forwards;
+}
+
+@keyframes modalShow {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.25rem;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.transaction-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.detail-label {
+    color: #666;
+    font-weight: 500;
+}
+
+.detail-value {
+    font-weight: 600;
+    color: #333;
+}
+
+.modal-footer {
+    padding: 1.5rem;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.modal-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.modal-button.cancel {
+    background-color: #f5f5f5;
+    color: #666;
+}
+
+.modal-button.cancel:hover {
+    background-color: #e0e0e0;
+}
+
+.modal-button.confirm {
+    background-color: #25d366;
+    color: white;
+}
+
+.modal-button.confirm:hover {
+    background-color: #1fa855;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .provider-options {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 0.5rem;
+    }
+
+    .whatsapp-modal {
+        padding: 0.5rem;
+    }
+
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+        padding: 1rem;
+    }
+
+    .modal-button {
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Provider Options Styles */
+.provider-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.provider-option {
+    position: relative;
+    cursor: pointer;
+}
+
+.provider-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    margin: 0;
+    z-index: 1;
+}
+
+.provider-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    aspect-ratio: 16/9;
+}
+
+.provider-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+/* Hover State */
+.provider-option:hover .provider-logo {
+    border-color: #CBD5E0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transform: translateY(-1px);
+}
+
+/* Selected State */
+.provider-option input[type="radio"]:checked + .provider-logo {
+    border-color: #805AD5;
+    border-width: 2px;
+    box-shadow: 0 0 0 3px rgba(128, 90, 213, 0.1);
+}
+
+.provider-option input[type="radio"]:checked + .provider-logo img {
+    transform: scale(0.95);
+}
+
+/* Focus State */
+.provider-option input[type="radio"]:focus + .provider-logo {
+    border-color: #805AD5;
+    box-shadow: 0 0 0 3px rgba(128, 90, 213, 0.1);
+}
+
+/* Disabled State */
+.provider-option input[type="radio"]:disabled + .provider-logo {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #F7FAFC;
+}

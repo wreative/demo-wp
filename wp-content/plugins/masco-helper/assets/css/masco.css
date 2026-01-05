@@ -1,0 +1,1091 @@
+/*--------------------------------------------------------------============================================================
+[Main Stylesheet]
+
+Project: Masco
+/*==============================
+[Table of contents]
+
+MASCO STYLESHEET
+----------------------------------
+INFINITE TEXT SLIDER 
+
+=============================================================--------------------------------------------------------------*/
+
+
+/* portfolio -- */
+.masco-portfolio-content {
+  position: relative;
+}
+
+span.masco-pf-category {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media (max-width: 1120px) {
+.style-one span.masco-pf-category {
+    position: static;
+}
+
+}
+
+.style-two span.masco-pf-category {
+    position: static;
+}
+
+.style-two .masco-portfolio-content {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    visibility: visible;
+}
+
+.style-three .masco-portfolio-image{
+  overflow: inherit;
+}
+
+.style-three.masco-portfolio-item:hover .masco-portfolio-image img {
+    transform: scale(1) rotate(0deg);
+}
+
+
+
+/* portfolio end */
+
+
+
+
+/* INFINITE TEXT SLIDER */
+.masco-text-slider-data {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.masco-text-slider-data h3 {
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin: 0 15px;
+  color: #fff;
+}
+
+.masco-text-slider-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+}
+
+.masco-text-slider-icon i,
+.masco-text-slider-icon path {
+  transition: all 0.4s;
+  font-size: 30px;
+}
+
+/* card */
+.masco-card-wrap {
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.4s;
+  position: relative;
+  background: #201C2C;
+  border: 1px solid #555555;
+}
+
+
+.masco-slider-one .slick-slide {
+  margin: 2px 12px;
+}
+
+.masco-card-thumb {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.masco-portfolio-image {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.masco-card-thumb img,
+.masco-portfolio-image img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: all 0.4s;
+}
+
+.masco-card-wrap:hover .masco-card-thumb img,
+.masco-portfolio-item:hover .masco-portfolio-image img {
+  transform: scale(1.1) rotate(3deg);
+}
+
+.masco-card-data,
+.masco-portfolio-content {
+  margin-top: 20px;
+}
+
+.masco-card-data h3,
+.masco-portfolio-content h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin: 0 0 10px;
+  font-family: Inter, sans-serif;
+}
+
+.masco-card-data p,
+.pf-pre-sale {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.4;
+  margin: 0;
+}
+
+
+
+.masco-card-footer-data span,
+.pf-mint-price span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.masco-card-footer-data h4,
+.pf-mint-price h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.portfolio-btn {
+  background: #FFFFFF;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 24.4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #13111A;
+  z-index: 0;
+  transition: all 0.4s;
+  position: relative;
+}
+
+
+.card-slider-arrow .slick-prev,
+.card-slider-arrow .slick-next {
+  left: -30px;
+  top: 50%;
+  z-index: 9;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.card-slider-arrow .slick-next {
+  left: auto;
+  right: -30px;
+}
+
+.card-slider-arrow .slick-prev:focus,
+.card-slider-arrow .slick-next:focus {
+
+  background-color: #fff !important;
+}
+
+
+@media (max-width: 1185px) {
+  .card-slider-arrow .slick-prev {
+    left: -15px;
+  }
+
+  .card-slider-arrow .slick-next {
+    right: -15px;
+  }
+}
+
+
+.card-slider-arrow button {
+  width: 60px;
+  height: 60px;
+  color: #201C2C;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 100%;
+  background-size: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  border: 5px solid #13111A;
+  transition: all 0.4s;
+}
+
+.card-slider-arrow button:hover {
+  background-color: #FFFFFF;
+}
+
+@media (max-width: 1360px) {
+
+  .card-slider-arrow .prev-arrow,
+  .card-slider-arrow .next-arrow {
+    left: 0;
+  }
+
+  .card-slider-arrow .next-arrow {
+    left: auto;
+    right: 0;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+
+
+/* Masco Button css */
+
+.masco-btn {
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 10px;
+  padding: 15.5px 36px;
+  font-weight: 700;
+  font-family: Inter, sans-serif;
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  min-width: 180px;
+  text-align: center;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  overflow: hidden;
+}
+
+.masco-btn.bg-gray {
+  color: #fff;
+  background-color: #26242C;
+}
+
+.masco-btn.active:before {
+  opacity: 1;
+}
+
+.masco-btn:before {
+  content: " ";
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all .4s;
+  opacity: 0;
+  border-radius: 10px;
+  background: linear-gradient(225deg, #0080ff 0, #7d41ea 46.35%, #ff00d4 100%);
+}
+
+.masco-btn:hover:before {
+  opacity: 1;
+}
+
+.masco-btn.active:hover:before {
+  width: 200%;
+}
+
+.masco-outline-btn {
+  padding: 2px;
+  border-radius: 10px;
+  display: inline-block;
+  color: #fff !important;
+  background: linear-gradient(to right, #ff00d4, #7d41ea, #0080ff);
+}
+
+.masco-outline-btn span {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 15.5px 38px;
+  border-radius: 10px;
+  background-color: #13111A;
+  transition: all .4s;
+}
+
+.masco-outline-btn:hover span {
+  background-color: transparent;
+}
+
+/*test slider*/
+.masco-text-slider-section {
+  padding: 22px 0;
+  overflow: hidden;
+  background: linear-gradient(225deg, #0080ff 0, #7d41ea 46.35%, #ff00d4 100%);
+}
+
+.masco-text-slider-data {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  flex-direction: row-reverse;
+}
+
+.masco-text-slider-data h3 {
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin: 0 15px;
+  color: #fff;
+  line-height: 36px;
+}
+
+@media (max-width: 600px) {
+  .masco-text-slider-data {
+    text-align: center;
+    display: block !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .masco-text-slider-icon {
+    margin-bottom: 10px;
+  }
+}
+
+
+/*masco nft slider v2*/
+
+.masco-card-wrap.masco-card2 {
+  background: #fff;
+  border: 3px solid #13111A;
+  border-radius: 3px;
+  padding: 18px;
+}
+
+.masco-card-wrap.masco-card2:before {
+  content: none;
+}
+
+.masco-card-wrap.masco-card2 .masco-card-thumb img {
+  border-radius: 3px;
+}
+
+.masco-card-wrap.masco-card2 .masco-card-data h3 {
+  color: #13111A;
+}
+
+.masco-card-wrap.masco-card2 .masco-card-data p {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  opacity: 1;
+  color: #13111A;
+}
+
+.masco-card-wrap.masco-card2 .masco-card-data p img {
+  margin-right: 8px;
+}
+
+.masco-card-wrap.masco-card2 .masco-card-footer-data h4 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #13111A;
+  opacity: 0.8;
+}
+
+.masco-card-wrap.masco-card2 .masco-card-footer .masco-btn {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: rgba(19, 17, 26, 0.4);
+  background-color: rgba(19, 17, 26, 0.1);
+}
+
+.masco-card-wrap.masco-card2 .masco-card-footer .masco-btn img {
+  opacity: 0.3;
+  margin-right: 7px;
+}
+
+.masco-card-wrap.masco-card2 .masco-card-footer .masco-btn:before {
+  content: none;
+}
+
+.masco-card-wrap.masco-card2 .masco-card-footer .masco-btn .red-heart {
+  display: none;
+}
+
+.masco-card-wrap.masco-card2 .masco-card-footer .masco-btn.dark-btn {
+  color: #fff;
+  background-color: #13111A;
+}
+
+.masco-card-wrap.masco-card2 .masco-card-footer .masco-btn.dark-btn img {
+  opacity: 1;
+}
+
+.masco-card-wrap.masco-card2 .masco-card-footer .masco-btn.dark-btn .red-heart {
+  display: block;
+}
+
+.masco-card-wrap.masco-card2 .masco-card-footer .masco-btn.dark-btn .black-heart {
+  display: none;
+}
+
+
+
+.masco-card-footer .masco-btn {
+  min-width: inherit;
+  height: auto;
+}
+
+.masco-nft-slider .slick-slide {
+  margin: 0 12px;
+}
+
+.masco-card-wrap.masco-card2 .masco-card-footer .masco-btn img {
+  opacity: .3;
+  margin-right: 7px;
+}
+
+.masco-card-wrap.masco-card2 .masco-card-footer .masco-btn .red-heart {
+  display: none;
+}
+
+.masco-btn.btn-sm {
+  font-size: 14px;
+  padding: 8px 23px;
+
+}
+
+.masco-card-wrap.masco-card2 .masco-card-data p svg {
+  margin-right: 8px;
+}
+
+/* elementor extra css hero thumb new css add */
+.masco-hero-thumb {
+  transform: rotate(3deg);
+  padding-left: 150px;
+}
+
+@media (max-width: 1399px) {
+  .masco-hero-thumb {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .masco-hero-thumb {
+    padding-left: 0px;
+    transform: rotate(0deg);
+  }
+
+}
+
+.masco-footer-address li.elementor-icon-list-item {
+  display: flex;
+}
+
+
+/*fugo v2 counter section*/
+.fugo-counter-section .elementor-counter {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+
+@media (max-width: 1207px) {
+  .fugo-counter-section .elementor-counter {
+    width: 210px;
+    height: 210px;
+    padding: 20px;
+  }
+
+}
+
+
+
+/*service details iconbox*/
+
+.masco-iconbox-border {
+  position: relative;
+}
+
+.masco-iconbox-border:before {
+  content: "";
+  top: 45px;
+  left: 50%;
+  width: calc(100% - 30%);
+  height: 1px;
+  position: absolute;
+  transform: translateX(-50%);
+  border: 1px dashed rgba(19, 17, 26, .1);
+}
+
+@media (max-width: 1023px) {
+  .masco-iconbox-border:before {
+    width: calc(100% - 50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .masco-iconbox-border:before {
+    content: none;
+  }
+}
+
+
+/*portfolio*/
+a.masco-portfolio-item.style-two {
+  position: relative;
+}
+
+
+a.masco-portfolio-item.style-two:before {
+  content: "";
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  mix-blend-mode: multiply;
+  border-radius: 10px;
+  transition: all .4s;
+  background: linear-gradient(180deg, rgba(10, 16, 47, 0) 0%, #0A102F 100%);
+}
+
+a.masco-portfolio-item.style-two:hover:before {
+  opacity: 1;
+}
+
+a.masco-portfolio-item.style-two:hover .masco-portfolio-content.content-postion-on-image {
+  left: 40px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.masco-portfolio-content.content-postion-on-image {
+  transition: all .4s;
+}
+
+
+/*testimonial page*/
+.style-two .testi-meta {
+  display: flex;
+  align-items: center;
+}
+
+.style-two .testi-image {
+  flex-shrink: 0;
+}
+
+.masco-testimonial-item {
+  transition: 0.4s;
+}
+
+/*coming soon*/
+.coming-soong-page .mas-addons-countdown li {
+  width: 200px;
+  height: 200px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 1023px) {
+  .coming-soong-page .mas-addons-countdown li {
+    width: 170px;
+    height: 170px;
+  }
+
+}
+
+.coming-soong-page .mas-addons-countdown li:nth-child(2),
+.coming-soong-page .mas-addons-countdown li:nth-child(3),
+.coming-soong-page .mas-addons-countdown li:nth-child(4) {
+  margin-left: -30px;
+}
+
+@media (max-width: 767px) {
+  .coming-soong-page .mas-addons-countdown {
+    justify-content: center;
+  }
+
+  .coming-soong-page .mas-addons-countdown li:nth-child(2),
+  .coming-soong-page .mas-addons-countdown li:nth-child(3),
+  .coming-soong-page .mas-addons-countdown li:nth-child(4) {
+    margin-left: 0;
+  }
+
+}
+
+
+
+/*text circle*/
+
+.masco-text-circle{
+  position: relative;
+}
+
+.masco-text-circle img{
+  transition: all 0.4s;
+  -webkit-animation: rotate-animation 12s infinite linear;
+  -moz-animation: rotate-animation 12s infinite linear;
+  -o-animation: rotate-animation 12s infinite linear;
+  animation: rotate-animation 12s infinite linear;
+}
+.masco-text-circle {
+    position: relative;
+    display: inline-block;
+}
+.masco-text-circle-icon {
+    position: absolute;
+    top: 43%;
+    left: 39%;
+    transition: all 0.4s;
+    transform: translate(-50%, -50%);
+    -webkit-animation: float-animation 3s ease-in-out infinite;
+    -moz-animation: float-animation 3s ease-in-out infinite;
+    -o-animation: float-animation 3s ease-in-out infinite;
+    animation: float-animation 3s ease-in-out infinite;
+}
+
+.masco-text-circle-icon i, 
+.masco-text-circle-icon svg path{
+  transition: all 0.4s;
+}
+
+
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float-animation {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+/*single testimonial*/
+
+.masco-t-slider-data {
+    background: #FFFFFF;
+    border: 2px solid #191919;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+.masco--tn-review {
+    margin-bottom: 30px;
+}
+.masco-t-slider-data h3{
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #0A102F;
+  font-family: 'Inter';
+  margin-bottom: 5px;
+}
+.masco-t-slider-data p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0A102F;
+  font-family: 'Inter';
+}
+
+.masco-t-author-data h4{
+  font-weight: 600;
+  font-size: 18px;
+  color: #0A102F;
+  font-family: 'Inter';
+}
+.masco-t-author-data span{
+  font-family: 'Inter';
+  font-size: 14px;
+  color: rgba(10, 16, 47, 0.7);
+ 
+}
+
+.masco-t-author-data {
+    margin-top: 30px;
+}
+
+.masco-t-slider .slick-dots {
+    position: static;
+    margin-top: 30px;
+}
+.masco-t-slider .slick-dots li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(25, 25, 25, 0.2);
+}
+.masco-t-slider .slick-dots li.slick-active {
+    background-color: #191919;
+}
+
+/*testmonialo 2 column slider v10*/
+
+.masco-t-slider-thumb img{
+  object-fit: cover;
+  object-position: center top;
+}
+
+.masco-t-slider-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+}
+.masco-t-slider-arrow .slick-prev, 
+.masco-t-slider-arrow .slick-next {
+  position: static;
+  margin: 0 10px;
+}
+
+
+@media (max-width: 991px) {
+.masco-t-slider-thumb img{
+  margin: 0 auto;
+}
+.masco-t-2column-slider-data{
+  text-align: center;
+}
+}
+
+@media (max-width: 767px) {
+  .masco-t-slider-arrow {
+    position: static;
+    justify-content: center;
+    margin-top: 65px;
+}
+
+}
+
+
+
+
+
+
+/* MASCO SERVICE CSS */
+.masco-service-section {
+  padding: 130px 0;
+}
+.masco-service-box {
+  background-color: rgb(246, 249, 240);
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+.masco-service-text {
+  margin: 0 94px;
+}
+.masco-service-text h4 {
+  font-family: Outfit, sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+.masco-service-text p {
+  font-family: Inter, sans-serif;
+  color: rgb(44, 44, 44);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  margin-bottom: 0px;
+}
+.masco-service-icon {
+  background-color: rgb(0, 0, 0);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.masco-service-icon a {
+  padding: 12px;
+}
+.box-hover:hover {
+  background-color: rgb(0, 0, 0);
+  transition: all 0.4s ease 0s;
+  padding: 40px 30px 40px 40px;
+}
+.box-hover:hover .masco-service-image svg path {
+  fill: rgb(246, 249, 240);
+  transition: all 0.4s ease 0s;
+}
+.box-hover:hover .masco-service-text h4 {
+  color: rgb(246, 249, 240);
+  transition: all 0.4s ease 0s;
+}
+.box-hover:hover .masco-service-text p {
+  color: rgb(246, 249, 240);
+  transition: all 0.4s ease 0s;
+}
+.box-hover:hover .masco-service-icon {
+  background-color: rgb(246, 249, 240);
+  transition: all 0.4s ease 0s;
+}
+.box-hover:hover .masco-service-icon svg path {
+  stroke: rgb(0, 0, 0);
+  transition: all 0.4s ease 0s;
+}
+@media (max-width: 991px) {
+  .masco-service-text {
+    margin: 0px 30px;
+  }
+}
+@media (max-width: 767px) {
+  .masco-service-text {
+    margin: 0px 25px;
+  }
+}
+@media (max-width: 576px) {
+  .masco-service-box {
+    display: block;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .masco-service-image {
+    margin-bottom: 20px;
+  }
+  .masco-service-text h4 {
+    margin-bottom: 10px;
+  }
+  .masco-service-text p {
+    margin-bottom: 20px;
+  }
+  .masco-service-icon {
+    width: 35%;
+    margin: 0px auto;
+  }
+  .box-hover:hover {
+    padding: 40px 20px;
+  }
+  .box-hover:hover .masco-service-icon {
+    margin: 0px auto;
+  }
+}
+
+/* offcanvas menu */
+.masco-sidemenu-wraper{
+  position: relative;
+}
+.main-menu {
+  display: block; 
+}
+.masco-sidemenu-column {
+    width: 750px;
+    display: block;
+    background: #ffffff;
+    height: 100%;
+    position: fixed;
+    z-index: 111;
+    padding: 80px 40px 60px;
+    margin-right: -750px;
+    transition: 0.5s;
+    right: 0;
+    top: 0;
+    overflow-y: scroll;
+}
+
+.admin-bar .masco-sidemenu-column {
+  padding: 100px 40px 60px;
+}
+.masco-sidemenu-column.active {
+      margin-right: 0px;
+      z-index: 9999;
+}
+.masco-sidemenu-wrap{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.menubar {
+      font-size: 28px;
+      cursor: pointer;
+      transition: all linear 0.3s;
+      color: #000;
+ }
+
+.masco-sidemenu-close {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    color: #333333;
+    font-size: 20px;
+    padding: 5px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+    transform: translateY(-50%);
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.4s;
+    visibility: hidden;
+    line-height: 1;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3147FF;
+    border-radius: 0;
+}
+.active .masco-sidemenu-close{
+  opacity: 1;
+  visibility: visible;
+}
+.admin-bar .masco-sidemenu-close{
+  top: 52px;
+}
+
+.offcanvas-overlay {
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      position: fixed;
+      z-index: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: .5s;
+ }
+
+.offcanvas-overlay.active {
+      opacity: .7;
+      z-index: 111;
+      visibility: visible;
+ }
+
+.menu-bar, 
+.masco-baynow-btn {
+    display: block;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #fff;
+    line-height: 1;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    color: #4243DC;
+    border-radius: 5px 0 0 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 50px;
+}
+.masco-baynow-btn{
+  margin-top: 15px;
+  color: #fff!important;
+  background-color: #121212;
+}
+
+.masco-sidemenu-btn{
+  top: 50%;
+  right: 0;
+  position: fixed;
+  transform: translateY(-50%);
+}
+.masco-sidemenu-item {
+  text-align: center;
+  transition: all 0.4s;
+  margin-bottom: 10px;
+}
+.masco-sidemenu-item:hover{
+  transform: translateY(-5px);
+}
+.masco-sidemenu-item img {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.masco-sidemenu-item h4 {
+    font-size: 18px;
+    margin: 0;
+    line-height: 21px;
+    text-transform: capitalize;
+}
+
+.masco-sidemenu-column::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+.masco-sidemenu-column::-webkit-scrollbar{
+  width: 5px;
+  background-color: #F5F5F5;
+}
+
+.masco-sidemenu-column::-webkit-scrollbar-thumb{
+  background-color: #000000;
+  border: 2px solid #555555;
+}
+h3.masco-sidemenu-title {
+    text-align: center;
+    font-size: 36px;
+    text-transform: capitalize;
+    margin: 0 0 40px;
+}
+
+@media (max-width: 991px) {
+.masco-sidemenu-wraper{
+  display: none;
+}
+
+}

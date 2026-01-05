@@ -1,0 +1,36 @@
+/* Clash display */
+@font-face {
+    font-family: 'Clash Display';
+    src: url('/wp-content/plugins/masco-helper/assets/fonts/ClashDisplay-Bold.woff2') format('woff2'),
+        url('/wp-content/plugins/masco-helper/assets/fonts/ClashDisplay-Bold.woff') format('woff'),
+        url('/wp-content/plugins/masco-helper/assets/fonts/ClashDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('/wp-content/plugins/masco-helper/assets/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+        url('/wp-content/plugins/masco-helper/assets/fonts/ClashDisplay-Medium.woff') format('woff'),
+        url('/wp-content/plugins/masco-helper/assets/fonts/ClashDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('/wp-content/plugins/masco-helper/assets/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+        url('/wp-content/plugins/masco-helper/assets/fonts/ClashDisplay-Regular.woff') format('woff'),
+        url('/wp-content/plugins/masco-helper/assets/fonts/ClashDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('/wp-content/plugins/masco-helper/assets/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+        url('/wp-content/plugins/masco-helper/assets/fonts/ClashDisplay-Semibold.woff') format('woff'),
+        url('/wp-content/plugins/masco-helper/assets/fonts/ClashDisplay-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
