@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'trx_addons_icons';
-  src: url('/wp-content/plugins/trx_addons/css/font-icons/font/trx_addons_icons.eot?56762239');
-  src: url('/wp-content/plugins/trx_addons/css/font-icons/font/trx_addons_icons.eot?56762239#iefix') format('embedded-opentype'),
-       url('/wp-content/plugins/trx_addons/css/font-icons/font/trx_addons_icons.woff2?56762239') format('woff2'),
-       url('/wp-content/plugins/trx_addons/css/font-icons/font/trx_addons_icons.woff?56762239') format('woff'),
-       url('/wp-content/plugins/trx_addons/css/font-icons/font/trx_addons_icons.ttf?56762239') format('truetype'),
-       url('/wp-content/plugins/trx_addons/css/font-icons/font/trx_addons_icons.svg?56762239#trx_addons_icons') format('svg');
+  src: url('../font/trx_addons_icons.eot?56762239');
+  src: url('../font/trx_addons_icons.eot?56762239#iefix') format('embedded-opentype'),
+       url('../font/trx_addons_icons.woff2?56762239') format('woff2'),
+       url('../font/trx_addons_icons.woff?56762239') format('woff'),
+       url('../font/trx_addons_icons.ttf?56762239') format('truetype'),
+       url('../font/trx_addons_icons.svg?56762239#trx_addons_icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'trx_addons_icons';
-    src: url('/wp-content/plugins/trx_addons/css/font-icons/font/trx_addons_icons.svg?56762239#trx_addons_icons') format('svg');
+    src: url('../font/trx_addons_icons.svg?56762239#trx_addons_icons') format('svg');
   }
 }
 */
